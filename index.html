@@ -3,67 +3,146 @@
 <head>
     <meta charset="utf-8">
     <title>Richard Mai</title>
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/boot strap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-      <script src="assets/javascript/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="assets/javascript/app.js"></script>
 
 </head>
 
 
 <body>
-  <div class="container" id="wrapper">
-    <section class="hero">
-        <div class="hero-inner">
-            <h1 class="header-text">Ⓡⓘⓒⓗⓐⓡⓓ Ⓜⓐⓘ</h1>
-            <span class="header-text">Philadelphia, PA</span>
-        </div>
-
-    </section>
   
+
+  <div class="" id="container">
+
+      <section class="hero">
+          <div class="hero-inner">
+              <h1 class="header-text">Ⓡⓘⓒⓗⓐⓡⓓ Ⓜⓐⓘ</h1>
+              <span class="header-text">Philadelphia, PA</span>
+          </div>
+  
+      </section>
+
   <div class="col-sm-12">  
 
   <main class="container">
 
     <div class="container">
         
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-inverse bg-dark">
-        
-        <a class="navbar-brand pr-5" href="#">Richard Mai</a>
-
-        <div class="navbar-collapse offcanvas" id="navbarsExampleDefault">
-        
-        <ul class="navbar-nav mr-auto">
-
-            <li class="nav-item pl-1">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Private Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>
-          </li>
-            </ul>
-
-        </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-color fixed-top">
+            <a class="navbar-brand" href="index.html" style="color: aliceblue">Richard Mai</a>
+            <button style="background-color: aliceblue" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span style="color: aliceblue" class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="favorites.html" style="color: aliceblue">About</a>
+                </li> 
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolio
+                          </a>
+                          <div class="dropdown-menu">
+                              <h5 class="dropdown-header">Projects</h5>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </div>
+                      </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" style="color: aliceblue">Private Projects</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input id="user-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="submitButton" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          
+               <!-- Sidebar
+              <nav id="sidebar">
+                  <div class="sidebar-header">
+                      <h3>Bootstrap Sidebar</h3>
+                  </div>
+          
+                  <ul class="list-unstyled components">
+                      <p>Dummy Heading</p>
+                      <li class="active">
+                          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                          <ul class="collapse list-unstyled" id="homeSubmenu">
+                              <li>
+                                  <a href="#">Home 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">Home 2</a>
+                              </li>
+                              <li>
+                                  <a href="#">Home 3</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">About</a>
+                      </li>
+                      <li>
+                          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                          <ul class="collapse list-unstyled" id="pageSubmenu">
+                              <li>
+                                  <a href="#">Page 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">Page 2</a>
+                              </li>
+                              <li>
+                                  <a href="#">Page 3</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">Portfolio</a>
+                      </li>
+                      <li>
+                          <a href="#">Contact</a>
+                      </li>
+                  </ul>
+              </nav>
+              <div id="content">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <div class="container-fluid">
+              
+                          <button type="button" id="sidebarCollapse" class="btn btn-info">
+                              <i class="fas fa-align-left"></i>
+                              <span>Toggle Sidebar</span>
+                          </button>
+              
+                      </div>
+                  </nav> -->
+                  
+              </div>
+          
+          </div>
     </div>  
     
 
@@ -83,7 +162,8 @@
 
 
 
-
+<div class="container" id="main">
+  <div class="col-sm-12">
     
       <div class="mt-2 my-3 p-3 bg-black rounded shadow-sm">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -130,21 +210,39 @@
               <div class="col-sm-4">
                 <div class="card border-dark mb-3 rounded dimthelights" style="width: 18rem;">
                   <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvHnFah8nvR3vylz8JIP1JO-gyYgeDn6c6fLUtHrNtZQIjcNJBQ" alt="Card image cap">
+                  <div class="card-title">
+                    <h3 class="card-header">Project Directory</h3>
+                  </div> 
                   <div class="card-body text-dark">
-                    <h5 class="card-title">Update Log 2019</h5> b
-                    <p class="card-text">Currently a work in progress. The idea is to create a blog-like website where I can post entries that will date themselves.(Done using Javascript)</p>
+                    
+                    <p class="card-text">Work In Progress. Currently trying to figure out why my dropdown menu is not working XD I post projects Here</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Created Website - 03/27/2019</li>
-                    <li class="list-group-item">Created Update Log - 03/28/2019</li>
+                    <li class="list-group-item">
+                      <a class="card-text" href="https://itsrichardmai.github.io/">First Deployed Github Website</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="card-text" href="https://itsrichardmai.github.io/HW-Wireframe/">First-time HTML</a>
+                      </li><li class="list-group-item">
+                          <a class="card-text" href="https://itsrichardmai.github.io/unit-4-game/">Crystal Collector</a>
+                        </li><li class="list-group-item">
+                            <a class="card-text" href="https://itsrichardmai.github.io/TriviaGame/">Trivia Game</a>
+                          </li><li class="list-group-item">
+                              <a class="card-text" href="https://itsrichardmai.github.io/giphy/">Giphy API</a>
+                            </li><li class="list-group-item">
+                                <a class="card-text" href="https://itsrichardmai.github.io/Train-Scheduler/">Train-Scheduler</a>
+                              </li>
+                              <li class="list-group-item">
+                                  <a class="card-text" href="https://edpaynter.github.io/INFO/index.html">INFO</a>
+                                </li>
                   </ul>
                   <div class="card-body">
                     <form>
                       <div class="form-group">
                         <label for="exampleFormControlFile1">Post Here!</label>
-                        <input type="text" class="form-control-file" id="exampleFormControlFile1" placeholder="Format: Update - DD/MM/YYYY">
+                        <input type="text" class="form-control-file" id="exampleFormControlFile1" placeholder="Currently Unavailable">
                         <br>
-                        <button for="exampleFormControlFile1" type="button" class="btn btn-secondary">Light</button>
+                        <button for="exampleFormControlFile1" type="button" class="btn btn-secondary">Send</button>
                       </div>
                     </form>
                   </div>
